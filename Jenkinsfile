@@ -8,7 +8,7 @@ pipeline {
             steps {
                 // Use Git credentials to checkout source code from Git repository
                 withCredentials([usernamePassword(credentialsId: 'github-int-jenkins', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
-                    git credentialsId: 'github-int-jenkins', url: 'https://github.com/TeamAaptatt/Aaptatt-hiring-assignment.git', branch: 'master'
+                    git credentialsId: 'github-int-jenkins', url: 'https://github.com/slalit28/Aaptatt-hiring-assignment.git', branch: 'master'
                 }
             }
         }
